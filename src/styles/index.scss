@@ -1,0 +1,117 @@
+// Typography
+$font-stack: "Segoe UI", system-ui, -apple-system, roboto, sans-serif;
+
+// Palette (aligned with Preview.vue)
+$color-accent: #fcc602; // primary yellow
+$color-bg-soft: #f2f6fc; // soft panel background
+$color-border-soft: #ebeef5; // subtle border
+$color-popover: #ffeec7; // tooltip/status background
+$color-highlight: #ffb30047; // line decoration highlight
+
+body {
+  color: #333;
+  font-family: $font-stack;
+  background: #fff;
+}
+
+.controls {
+  padding: 12px 16px;
+  margin: 16px 24px;
+  background: $color-bg-soft;
+  border: 1px solid $color-border-soft;
+  border-radius: 6px;
+}
+
+.controls-title {
+  margin: 0 0 8px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.controls-row {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.controls-row select,
+.controls-row input[type="file"] {
+  padding: 6px 8px;
+  border: 1px solid $color-border-soft;
+  border-radius: 4px;
+  background: #fff;
+  color: #333;
+}
+
+.controls-row select:focus,
+.controls-row input[type="file"]:focus {
+  outline: none;
+  border-color: $color-accent;
+  box-shadow: 0 0 0 2px #fcc60240;
+}
+
+.controls-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.sample-link {
+  margin-left: 8px;
+  color: $color-accent;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.sample-link:hover {
+  text-decoration: underline;
+}
+
+.controls-actions button {
+  background: $color-accent;
+  color: #fff;
+  font-weight: 700;
+  border: 0;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.controls-actions button:hover {
+  background: #e0b300;
+}
+
+[id="resetBtn"] {
+  background: #fff;
+  color: #333;
+  border: 1px solid $color-border-soft;
+}
+
+[id="resetBtn"]:hover {
+  background: $color-popover;
+}
+
+.status {
+  margin-top: 8px;
+  color: #333;
+  background: $color-popover;
+  border: 1px solid $color-border-soft;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.row-count {
+  margin-top: 4px;
+  color: #666;
+}
+
+div[id="LibraPlayground"] {
+  margin: 24px;
+}
+
+.controls-icon {
+  width: 20px;
+  height: 20px;
+}
