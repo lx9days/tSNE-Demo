@@ -3,6 +3,8 @@ node_modules
 
 # production
 build
+# allow publishing docs to GitHub Pages
+# (do not ignore docs folder)
 
 # misc
 .DS_Store
